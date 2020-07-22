@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>ToolTipView.Xamarin.Android</id>
+    <version>1.0.1</version>
+    <title>ToolTipView.Xamarin.Android</title>
+    <authors>Emil Alipiev</authors>
+    <owners>EmilAlipiev</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/EmilAlipiev/ToolTipView.Xamarin.Android</projectUrl>
+	<repository type="git" url="https://github.com/EmilAlipiev/ToolTipView.Xamarin.Android" />
+    <description>Tooltip popup for Xamarin.Android projects</description>
+    <releaseNotes></releaseNotes>
+    <tags>Xamarin, Xamarin.Android, ToolTips, ToolTip, Popup, Hover</tags>    
+	<license type="expression">MIT</license>
+  </metadata>
+   <files>      
+      <!--Android--> 
+	  <file src="ToolTipView.Xamarin.Android\bin\Release\ToolTipView.Xamarin.Android.dll" target="lib\MonoAndroid10" />  	 
+	  <file src="ToolTipView.Xamarin.Android\bin\Release\ToolTipView.Xamarin.Android.pdb" target="lib\MonoAndroid10" />  	 
+    </files>
+</package>
