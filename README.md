@@ -5,4 +5,4 @@ If you are looking for xamarin.forms version for IOS, Android and UWP, use this 
 
 [![Nuget Package Deploy](https://github.com/EmilAlipiev/ToolTipView.Xamarin.Android/workflows/Nuget%20Package%20Deploy/badge.svg)](https://www.nuget.org/packages/ToolTipView.Xamarin.Android)
 
-Based on https://github.com/ViHtarb/Tooltip
+Based on https://github.com/tomergoldst/tooltips 
