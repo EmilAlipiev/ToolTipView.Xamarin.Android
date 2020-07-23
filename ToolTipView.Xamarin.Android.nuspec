@@ -17,6 +17,6 @@
    <files>      
       <!--Android--> 
 	  <file src="ToolTipView.Xamarin.Android\bin\Release\ToolTipView.Xamarin.Android.dll" target="lib\MonoAndroid10" />  	 
-	  <file src="ToolTipView.Xamarin.Android\bin\Release\ToolTipView.Xamarin.Android.pdb" target="lib\MonoAndroid10" />  	 
+	  <file src="ToolTipView.Xamarin.Android\bin\Release\ToolTipView.Xamarin.Android.pdb" target="lib\MonoAndroid10" />  	     	  
     </files>
 </package>
