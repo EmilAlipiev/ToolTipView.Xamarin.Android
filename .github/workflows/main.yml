@@ -1,0 +1,25 @@
+name: Nuget Package Deploy
+
+on: 
+ push:
+   branches: 
+     - master
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2     
+    - name: Setup Nuget.exe
+      uses: warrenbuckley/Setup-Nuget@v1
+    - name: Restore Nuget
+      run: nuget restore  ToolTipView.Xamarin.Android/ToolTipView.Xamarin.Android.csproj
+    - name: Setup MSBuild.exe
+      uses: warrenbuckley/Setup-MSBuild@v1
+    - name: Build with dotnet
+      run: msbuild ToolTipView.Xamarin.Android/ToolTipView.Xamarin.Android.csproj -property:Configuration=Release
+    - name: Pack with dotnet
+      run: nuget pack ToolTipView.Xamarin.Android.nuspec
+    - name: Push Package to nuget
+      run: dotnet nuget push **/*.nupkg
+             --api-key ${{ secrets.nugetapikey }}
+             --source https://api.nuget.org/v3/index.json
